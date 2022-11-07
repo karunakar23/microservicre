@@ -1,0 +1,15 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: user
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefix: config
+        default-context: application
+        profile-separator: '::'
+        format: YAML
